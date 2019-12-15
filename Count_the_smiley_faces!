@@ -14,10 +14,9 @@ Invalid smiley faces:
 
 def count_smileys(arr)
 
-eyes = [":", ";"]
-mouth = [")", "D"]
+  eyes = [":", ";"]
+  mouth = [")", "D"]
 
-
-arr.select{|i| eyes.include?(i[0]) && mouth.include?(i[-1]) unless i[1] == " "}.count
+  arr.select{|i| eyes.include?(i[0]) && mouth.include?(i[-1]) unless i[1] == " "}.count
 
 end
