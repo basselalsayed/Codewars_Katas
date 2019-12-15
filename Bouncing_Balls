@@ -17,19 +17,19 @@ The ball can only be seen if the height of the rebounding ball is strictly great
 
 def bouncingBall(h, b, w)
   
-if h > 0 and b > 0 and b < 1 and w < h
-  count = 1
-  h = h * b
-  if h <= w
-  count
-  else
-    until h < w
+  if h > 0 && b > 0 && b < 1 && w < h
+    count = 1
     h = h * b
-    count +=2
+    if h <= w
+      count
+    else
+      until h < w
+        h = h * b
+        count +=2
+      end
+    count
     end
-  return count
+  else
+    - 1
   end
-else
-  - 1
-end
 end
